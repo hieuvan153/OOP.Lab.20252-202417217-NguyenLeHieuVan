@@ -49,6 +49,7 @@ public class Ex65 {
         System.out.println("The sorted array is: " + Arrays.toString(a));
         System.out.println("The sum of the array is: " + sum);
         System.out.println("The average of the array is: " + avg);
+        
         sc.close();
         System.exit(0);
     }
