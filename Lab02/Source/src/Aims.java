@@ -68,5 +68,9 @@ public class Aims {
 		System.out.println("Total Cost is: ");
 		System.out.printf("%.2f", anOrder.totalCost());
 		System.out.println("");
+		
+		System.out.println("ID of dvd1: " + dvd1.getId());
+		System.out.println("ID of dvd2: " + dvd2.getId());
+		System.out.println("ID of dvd3: " + dvd3.getId());
 	}
 }
