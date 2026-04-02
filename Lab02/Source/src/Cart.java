@@ -18,6 +18,25 @@ public class Cart {
 		}
 	}
 	
+	public void addDigitalVideoDisc(DigitalVideoDisc [] dvdList) {
+		for (DigitalVideoDisc disc : dvdList) {
+			this.addDigitalVideoDisc(disc);
+		}
+	}
+	
+	/*
+	public void addDigitalVideoDisc(DigitalVideoDisc... dvdList) {
+		for (DigitalVideoDisc disc : dvdList) {
+			this.addDigitalVideoDisc(disc);
+		}
+	}
+	*/
+	
+	public void addDigitalVideoDisc(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2) {
+		this.addDigitalVideoDisc(dvd1);
+		this.addDigitalVideoDisc(dvd2);
+	}
+	
 	public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
 		boolean found = false;
 		for (int i = 0; i < qtyOrdered; i++) {
