@@ -1,0 +1,4 @@
+*.asta.lock
+*.project
+*.classpath
+*.png.bak
