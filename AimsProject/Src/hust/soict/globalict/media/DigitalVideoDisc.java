@@ -1,36 +1,24 @@
 package hust.soict.globalict.media;
 
-public class DigitalVideoDisc extends Media {
-	private String director;
-	private int length;
+public class DigitalVideoDisc extends Disc {
 	private static int nbDigitalVideoDiscs = 0;
-
-	public String getDirector() {
-		return director;
-	}
-	public int getLength() {
-		return length;
-	}
 	
 	public DigitalVideoDisc(String title) {
-		super(++nbDigitalVideoDiscs, title, null, 0.0);
+		super(++nbDigitalVideoDiscs, title, null, null, 0, 0.0);
 	}
 	public DigitalVideoDisc(String title, String category, double cost) {
-		super(++nbDigitalVideoDiscs, title, category, cost);
+		super(++nbDigitalVideoDiscs, title, category, null, 0, cost);
 	}
 	public DigitalVideoDisc(String title, String category, String director, double cost) {
-		super(++nbDigitalVideoDiscs, title, category, cost);
-		this.director = director;
+		super(++nbDigitalVideoDiscs, title, category, director, 0, cost);
 	}
 	public DigitalVideoDisc(String title, String category, String director, int length, double cost) {
-		super(++nbDigitalVideoDiscs, title, category, cost);
-		this.director = director;
-		this.length = length;
+		super(++nbDigitalVideoDiscs, title, category, director, length, cost);
 	}
 
 	@Override
 	public String toString() {
-		return getTitle() + " - " + getCategory() + " - " + director + " - " + length + ": " + getCost() + " $";
+		return getTitle() + " - " + getCategory() + " - " + getDirector() + " - " + getLength() + ": " + getCost() + " $";
 	}
 
 	public boolean isMatch(String searchTitle) {
