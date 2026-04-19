@@ -23,7 +23,6 @@ public class TestPassingParameter {
 	
 	public static void changeTitle(DigitalVideoDisc dvd, String title) {
 		String oldTitle = dvd.getTitle();
-		dvd.setTitle() = title;
 		dvd = new DigitalVideoDisc(oldTitle);
 	}
 }
